@@ -8,7 +8,7 @@ USER root
 WORKDIR /tmp
 
 # install some extra packages
-RUN apt-get -qy update && apt-get install -qy curl gpg less rlwrap && \
+RUN apt-get -qy update && apt-get install -qy curl less rlwrap && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
